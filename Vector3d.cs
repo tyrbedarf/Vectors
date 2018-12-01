@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Zeta
+namespace Vectors
 {
     [Serializable]
     public struct Vector3d : IEquatable<Vector3d>

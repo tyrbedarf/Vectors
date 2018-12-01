@@ -5,7 +5,7 @@ using UnityEngine;
 using Unity.Collections;
 using NUnit.Framework;
 
-namespace Zeta.Tests.Terrain
+namespace Vectors.Tests.Terrain
 {
     public class Vector3dTest
     {

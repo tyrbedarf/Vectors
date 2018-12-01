@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Zeta
+namespace Vectors
 {
+    [Serializable]
     public struct Vector2d
     {
         public double x;

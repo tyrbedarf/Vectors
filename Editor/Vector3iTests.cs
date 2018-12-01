@@ -3,7 +3,7 @@
 using NUnit.Framework;
 using Unity.Collections;
 
-namespace Zeta.Tests
+namespace Vectors.Tests
 {
     class Vector3iTests
     {
@@ -16,8 +16,8 @@ namespace Zeta.Tests
                 {
                     for(int z = 0; z < 16; z++)
                     {
-                        var a = new Zeta.Vector3i(x, y, z);
-                        var b = new Zeta.Vector3i(x, y, z);
+                        var a = new Vectors.Vector3i(x, y, z);
+                        var b = new Vectors.Vector3i(x, y, z);
                         var test = a + b;
 
                         Assert.AreEqual(test.x, x + x);
@@ -37,8 +37,8 @@ namespace Zeta.Tests
                 {
                     for(int z = 0; z < 16; z++)
                     {
-                        var a = new Zeta.Vector3i(x, y, z);
-                        var b = new Zeta.Vector3i(x, y, z);
+                        var a = new Vectors.Vector3i(x, y, z);
+                        var b = new Vectors.Vector3i(x, y, z);
                         var test = a - b;
 
                         Assert.AreEqual(test.x, x - x);
@@ -65,7 +65,7 @@ namespace Zeta.Tests
                 }
             }
 
-            var subject = new Zeta.Vector3i(size, size, size);
+            var subject = new Vectors.Vector3i(size, size, size);
             var result = 0;
             foreach(var v in subject)
             {
@@ -110,8 +110,8 @@ namespace Zeta.Tests
         [Test]
         public void Operator_Equals_Test()
         {
-            var a = new Zeta.Vector3i(25, 0, 25);
-            var b = new Zeta.Vector3i(25, 0, 25);
+            var a = new Vectors.Vector3i(25, 0, 25);
+            var b = new Vectors.Vector3i(25, 0, 25);
 
             Assert.IsTrue(a == b);
             Assert.IsTrue(a.Equals(b));
